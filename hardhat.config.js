@@ -19,10 +19,16 @@ task("accounts", "Prints the list of accounts", async (taskArgs, hre) => {
  */
 module.exports = {
   solidity: "0.8.4",
+  paths: {
+    artifacts: './src/artifacts',
+  },
   networks: {
     rinkeby: {
-      url: process.env.ALCHEMY_URL,
+      url: process.env.INFURA_URL,
       accounts: [process.env.ACCOUNT_PRIVATE],
     },
   }
 };
+
+
+console.log('hello')

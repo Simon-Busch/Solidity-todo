@@ -1,12 +1,12 @@
 import React,{ useEffect, useState } from "react";
 import { ethers } from "ethers";
-// import abi from './utils/WavePortal.json';
+import abi from './artifacts/contracts/TodoList.sol/TodoList.json';
 
 import './App.css';
 
 const App = () => {
-  // const contractAddress = '0xb233b630E401aCFb4e430dbeb51fF936CbC14f91';
-	// const contractABI = abi.abi;
+  const contractAddress = '0x04636789C48A8BEF23012fDB5247b061db0a6346';
+	const contractABI = abi.abi;
 
   return (
     <div className="App">
